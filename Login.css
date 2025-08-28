@@ -209,3 +209,69 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+/* ===== Responsive for Tablets ===== */
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+    min-height: 500px;
+  }
+
+  .container form {
+    padding: 0 20px;
+  }
+
+  .toggle-container {
+    width: 50%;
+    border-radius: 400px 0 0 100px;
+  }
+
+  .toggle {
+    width: 200%;
+  }
+
+  .Service-container, .contact-container {
+    padding: 20px;
+  }
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 600px) {
+  body {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 600px;
+    border-radius: 20px;
+  }
+
+  .form-container.sign-in,
+  .form-container.sign-up {
+    width: 100%;
+  }
+
+  .container.active .sign-in,
+  .container.active .sign-up {
+    transform: translateX(0);
+  }
+
+  .toggle-container {
+    display: none; /* optional: hide toggle for small screens */
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+  }
+
+  .container button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .toggle-panel {
+    padding: 0 15px;
+  }
+}
